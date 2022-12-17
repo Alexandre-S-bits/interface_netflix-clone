@@ -1,0 +1,104 @@
+:root{
+    --vermelho:#E50914;
+    --preta: #141414;
+    --branco: rgb(242, 242, 242)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(248, 238, 238);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#ddd;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+
+
+/* Video principal linear-gradient(rgba(0,0,0,.50)) */  
+.video-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('../img/spider-man.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.video-principal .descricao-video{
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+.video-principal .container{
+    width: 70%;
+}
+
+.titulo-video {
+    font-size: 40px;
+    margin-top: 15%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn {
+    border: none;
+    background-color: rgba(0,0,0,.50);
+    color: var(--branco);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--branco);
+    color: #141414;
+    transition: 0.6s ease all;
+}
+
+.btn i{
+    margin-right: 8px;
+}
+
+.box-filme {
+    height: 90%;
+    width: 90%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
